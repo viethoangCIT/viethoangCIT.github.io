@@ -8,21 +8,20 @@
   <script src="socket.io.js"></script>
 </head>
 
-<body>
+<body style="background-color:#cccc">
   <div id="div-chat">
     <p>User online</p>
-    <ul id="ulUser">
+    <ul id="ulUser" style="color:blue">
 
     </ul>
     <h3 id="my-peer">Your id: </h3>
-    <video id="localStream" width="300" controls></video>
+    <video id="localStream" width="500" height="400" controls style="margin-left:100px"></video>
+    <video id="remoteStream" width="500" height="400" controls style="margin-left:50px"></video>
     <br />
-    <video id="remoteStream" width="300" controls></video>
-    <br />
-    <input type="text" id="remoteId" placeholder="Remote ID">
-    <button id="btnCall">Call</button>
+    <input type="text" id="remoteId" placeholder="Remote ID" style="margin-left:560px">
+    <button id="btnCall" >Call</button>
   </div>
-  <div id="div-dky">
+  <div id="div-dky" >
     <br />
     <input type="text" id="txtUsername" placeholder="username">
     <button id="btnSignup">Sign up</button>
